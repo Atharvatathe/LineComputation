@@ -24,11 +24,14 @@ public class LineComaprison
 		Double obj1 = new Double(LengthOfLine1);
 		Double obj2 = new Double(LengthOfLine2);
 
-		if(obj1.equals(obj2))
-			System.out.println("Both lines are equals");
-		else
-			System.out.println("Both line are different");
-
+		int compare = obj1.compareTo(obj2);
+		
+		if(compare == 1)
+			System.out.println("Line 1 is gretter than Line 2");
+		else if(compare == -1)
+			System.out.println("Line 1 is less than Line 2");
+		else if(compare == 0)
+			System.out.println("Line1 and Line2 are equals");
 	}
 }
 
