@@ -1,10 +1,16 @@
-
+import java.lang.Math;
 public class LineComaprison
 {
-	public static void main(String[] args)
+		public static void main(String[] args)
 	{
 
-		System.out.println("Welcome to Line Comparison Computation Program");
+		int x1=2;
+		int x2=3;
+		int y1=2;
+		int y2=4;
+
+		double LengthOfLine = Math.sqrt((x2-x1)^2 + (y2-y1)^2);
+		System.out.println("Length of line is: " +LengthOfLine);
 	}
 }
 
